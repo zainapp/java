@@ -1,0 +1,31 @@
+
+ 
+package dowhile;
+
+import java.util.Scanner;
+
+public class Dowhile {
+
+   
+    public static void main(String[] args) {
+        
+        System.out.println("sayi girin");
+        
+        Scanner scan =new Scanner(System.in);
+        
+        int sayi=scan.nextInt();
+        int toplam =0;
+        
+        
+        do{
+            toplam =toplam + sayi%10;
+            
+            sayi=sayi/10;
+            
+            System.out.println("toplam" + toplam + "sayi" +sayi );
+            
+        }
+        while(sayi>0);
+    }
+    
+}
